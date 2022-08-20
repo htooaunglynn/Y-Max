@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+@font-face {
+    font-family: ibmPlexSerif_semiBold;
+    src: url(../Fonts/IBM_Plex_Serif/IBMPlexSerif-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: ibmPlexSerif_italic;
+    src: url(../Fonts/IBM_Plex_Serif/IBMPlexSerif-Italic.ttf);
+}
+
+@font-face {
+    font-family: ibmPlexSerif_regulr;
+    src: url(../Fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf);
+}
+
+ /* home page  */
+
+  /* start content  */
+.container{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    /* border: 3px dotted lawngreen; */
+}
+
+#contentHome{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 40px;
+}
+
+#imgDivHome img{
+    width: auto;
+    height: 350px;
+    border-radius: 70px;
+}
+
+#pbyText{
+    text-align: center;
+    padding-top: 80px;
+}
+
+#pbyText h1{
+    margin-bottom: 30px;
+    font-family: ibmPlexSerif_semiBold;
+}
+
+#pbyText p{
+    font-family: ibmPlexSerif_regulr;
+}
+  /* end content  */
+
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+  /* start footer  */
+
+.footerDiv ul{
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.footerDiv ul li{
+    float: left;
+}
+
+
+.footerDiv ul li a{
+    border: 1px solid white;
+    margin: 30px;
+    font-family: ibmPlexSerif_italic;
+    color: lightcoral;
+}
+
+.footerDiv ul li a:hover{
+    color: white;
+    background-color: tomato;
+}
+
+.footerDiv ul li a:active{
+    background-color: lightgreen;
+}
+
+.button{
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+  /* end footer  */
+
+/* end home page  */
+
+/* start Profile page  */
+#contentProfile{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+}
+
+#tableDiv table{
+    /* border: 1px solid tomato; */
+    margin-left: 60px;
+}
+
+#tableDiv table tr th, #tableDiv table tr td{
+    border-radius: 10px;
+    /* border: 1px solid tomato;  */
+    padding: 9px;
+    
+}
+
+/* table, th, td{
+    border-collapse: collapse;
+} */
+
+#tableDiv table tr th{
+    text-align: left;
+    font-family: ibmPlexSerif_semiBold;
+    margin-left: 10px;
+}
+
+#tableDiv table tr td{
+    font-family: ibmPlexSerif_regulr;
+    padding-left: 40px;
+}
+
+#imgDivProfile img{
+    /* border: 1px solid red; */
+    width: auto;
+    height: 400px;
+    border-radius: 30px;
+}
+/* end Profile page  */
+
+/* start about page  */
+
+.contentAbout p{
+    padding-bottom: 15px;
+    font-family: ibmPlexSerif_regulr;
+}
+/* end about page  */
+
+/* start official page  */
+.imgDivOfficial img{
+    width: auto;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.contentOfficial{
+    /* border: 1px solid salmon; */
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.smDivOfficial{
+    /* border: 1px solid lightgreen; */
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.smDivOfficial div h1{
+    font-family: ibmPlexSerif_semiBold;
+    margin-bottom: 30px;
+}
+
+.smDivOfficial div{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.smDivOfficial div a{
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 30px;
+}
+/* end official page  */
+
+.instagram {
+    color: #F56040;
+}
+
+.instagram2 {
+    color: #E1306C;
+}
+
+.circle_span {
+    border-radius: 100%;
+}
+
+.youtube {
+    color: red;
+}
+
+.vlive {
+    color: cyan;
+}
+
+.cafe{
+    color: #8E3BB1;
+}
+
+footer {
+    clear: both;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 550px;
+}
+
+#ft_profile {
+    clear: both;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 550px;
+}

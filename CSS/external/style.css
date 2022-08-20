@@ -1,0 +1,14 @@
+form {
+    margin-top: 100px;
+    text-align: center;
+}
+input {
+    padding: 20px;
+    border-radius: 30px;
+}
+input[type="text"] {
+    background-color: aqua;
+}
+[type="submit"] {
+    background-color: lightcoral;
+}
