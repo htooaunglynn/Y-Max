@@ -22,6 +22,11 @@ body{
     src: url(../Fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf);
 }
 
+@font-face {
+    font-family: ibmPlexSerif_SemiBoldItalic;
+    src: url(../Fonts/IBM_Plex_Serif/IBMPlexSerif-SemiBoldItalic.ttf);
+}
+
  /* home page  */
 
   /* start content  */
@@ -80,7 +85,7 @@ hr{
 
 .footerDiv ul li a{
     border: 1px solid white;
-    margin: 30px;
+    margin: 15px;
     font-family: ibmPlexSerif_italic;
     color: lightcoral;
 }
@@ -222,6 +227,7 @@ footer {
     position: absolute;
     margin-top: 170px;
     margin-left: 550px;
+    font-family: ibmPlexSerif_regulr;
 }
 
 #ft_profile {
@@ -229,4 +235,51 @@ footer {
     position: absolute;
     margin-top: 120px;
     margin-left: 550px;
+    font-family: ibmPlexSerif_regulr;
+}
+
+ /* contact page  */
+.left_div >.contact_form {
+    display: inline-block;
+}
+
+.contact_form  input, .contact_form textarea {
+    margin: 0px 100px 10px 100px;  
+    padding: 15px;  
+    font-family: ibmPlexSerif_SemiBoldItalic;
+    border: none;
+    border-radius: 20px;
+}
+
+legend {
+    background-color: wheat;
+    font-family: ibmPlexSerif_semiBold;
+    color: black;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.contact_section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_div {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: wheat;
+    margin-bottom: 10px;
+    font-family: ibmPlexSerif_semiBold;
+}
+
+input[type="submit"]:hover {
+    color: wheat;
+    border: 1px solid wheat;
+    background-color: #eeeeee;
 }
