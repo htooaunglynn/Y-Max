@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="intro">
+        HelloWorld.
+    </p>
+    <p>
+        Welcome from YMU.
+    </p>
+    <p>
+        Third Paragraph.
+    </p>
+
+    <script>
+        let txt = document.getElementsByTagName("p");
+        document.write(`The text from the intro paragraph : ${txt[0].innerHTML} <br>`);
+        document.write(`The text from the next paragraph : ${txt[1].innerHTML} <br>`);
+        document.write(`The text from the third paragraph : ${txt[2].innerHTML} <br>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File 8</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="item" placeholder="Item Name">
+    </form>
+
+    <br><br>
+
+    <button type="button" onclick="Sortlist()">
+        Delete
+    </button>
+
+    <button type="button" onclick="Add()">
+        Add
+    </button>
+
+    <h3>Sorting Algorithm</h3>
+
+    <ul id="listitem">
+        <li>Insertion Sort</li>
+        <li>Mege Sort</li>
+        <li>Quick Sort</li>
+    </ul>
+
+    <script>
+        function Sortlist() {
+            let doc = document.getElementById("listitem");
+
+            doc.removeChild(doc.childNodes[0]);
+        }
+
+        function Add() {
+            let item = document.getElementById("item").value;
+            console.log(item);
+
+            let li = document.createElement("li");
+            li.appendChild(document.createTextNode(item));
+
+            let ul = document.getElementById("listitem");
+            ul.appendChild(li);
+        }
+    </script>
+</body>
+</html>
