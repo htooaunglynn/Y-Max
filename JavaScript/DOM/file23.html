@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File 23</title>
+</head>
+<body>
+    <h3>Checking Empty Field</h3>
+
+    <form name="f1">
+        Email : <input type="text" name="email"> 
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <input type="button" value="Check" onclick="check()">
+    </form>
+
+    <script>
+        function check() {
+            if (document.f1.email.value.indexOf('@') == -1) {
+                alert("Wrong Format!!");
+            } else {
+                alert("It is Ok.");
+            }
+        }
+    </script>
+</body>
+</html>
