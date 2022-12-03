@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File 26</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            background: tomato;
+        }
+
+        section {
+            /* border: 1px solid khaki; */
+            width: fit-content;
+            height: 70vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        section > img {
+            width: auto;
+            height: 20rem;
+        }
+    </style>
+</head>
+<body>
+
+    <section name="sel">
+        <img src="./E1.jpg" name="image" alt="E1" id="e1">
+        <select id="food">
+            <option value="./E1.jpg" id="$3932" onselect="change(value, id)">E1</option>
+            <option value="./E2.jpg" id="$2941" onselect="change(this.value, this.id)">E2</option>
+            <option value="./thomas.jpg" id="$2023" onselect="change(this.value, this.id)">Thomas</option>
+        </select>
+        <input type="text" name="image" id="money">
+    </section>
+    
+    <script>
+        function change(x, y) {
+            let srcVale = x;
+            let money = y;
+            console.log(x,y);
+            document.sel.image.src = x;
+        }
+    </script>
+</body>
+</html>
