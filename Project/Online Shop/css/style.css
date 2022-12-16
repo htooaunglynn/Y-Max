@@ -1,0 +1,24 @@
+:root {
+  --bg-color: #222222;
+  --primary-color: #fff;
+  --header-color: #ff8b00;
+  --text-color: #939393;
+  --bg2-color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+
+  font-family: FiraCodeRegular;
+}

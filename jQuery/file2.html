@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File 2</title>
+</head>
+<body>
+    <p id="greet">Hello!</p>
+    <p id="greet2">Hello World!</p>
+
+    <script src="./jquery.js"></script>
+    <script>
+        $("#greet").html("Hello from YMU!");
+        $("#greet").css({
+            "color": "purple",
+            "background-color": "pink",
+            "padding": "10px",
+            "font-size": "3rem",
+            "margin": "30px",
+            "text-align": "center"
+        });
+
+        $("#greet2").html("Hello from YMU!!!!").css("color", "blue");
+    </script>
+</body>
+</html>

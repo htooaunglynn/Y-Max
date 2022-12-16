@@ -1,0 +1,13 @@
+footer {
+  margin-top: 100px !important;
+  background-color: var(--bg-color) !important;
+}
+
+.custom_footer {
+  color: var(--header-color);
+}
+
+.footer_heart {
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
